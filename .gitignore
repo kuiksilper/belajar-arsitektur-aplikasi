@@ -1,0 +1,15 @@
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python/temp files, kalau nanti ada latihan coding
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+
+# Generated files
+*.log
