@@ -82,3 +82,37 @@ Hal yang masih bingung:
 Next step:
 - Pelajari Request dan Response: bagaimana frontend berbicara dengan backend.
 - Materi berikutnya: `01-fundamental/04-request-response.md`.
+
+---
+
+## Tanggal: 2026-07-04 — Sesi 3
+
+Topik:
+Request dan Response pada aplikasi laporan kerja Telegram.
+
+Yang dipelajari:
+- Request adalah permintaan dari frontend/user ke backend.
+- Response adalah jawaban dari backend ke frontend/user.
+- Request bisa dipakai untuk mengambil data atau mengirim data baru.
+- Response bisa sukses atau gagal/error.
+- Pesan user di Telegram bisa dianggap sebagai request.
+- Backend memvalidasi request sebelum menyimpan data atau mengirim response.
+- GET digunakan untuk mengambil data.
+- POST digunakan untuk mengirim data baru agar diproses/disimpan.
+
+Contoh/praktik:
+- Menganalisis request-response pada aplikasi laporan pekerjaan harian via Telegram.
+- Membuat diagram: `User -> Frontend Telegram -> Request -> Backend/script bot -> Database -> Backend -> Response -> Frontend Telegram -> User`.
+
+Hal yang mulai dipahami:
+- Frontend dan backend berkomunikasi melalui request dan response.
+- Backend tidak boleh langsung percaya pada request; backend harus validasi dulu.
+- Frontend sebaiknya tidak langsung menulis ke database karena alasan keamanan, aturan aplikasi, dan kerapian data.
+- Response aplikasi tergantung desain: bisa pesan sukses, data hasil proses, atau pesan error.
+
+Hal yang masih bingung:
+- Belum ada catatan khusus. Nanti akan diperdalam saat belajar API dan JSON.
+
+Next step:
+- Pelajari API dan JSON sebagai bentuk request-response yang lebih resmi dan terstruktur.
+- Materi berikutnya: `01-fundamental/05-api-json.md`.
