@@ -152,3 +152,37 @@ Hal yang masih bingung:
 Next step:
 - Pelajari struktur folder project dan pemisahan tanggung jawab kode.
 - Materi berikutnya: `01-fundamental/06-struktur-folder-project.md`.
+
+---
+
+## Tanggal: 2026-07-06 — Sesi 5
+
+Topik:
+Struktur folder project dan pemisahan tanggung jawab kode.
+
+Yang dipelajari:
+- Satu file besar cocok untuk belajar awal, tetapi tidak ideal untuk aplikasi yang akan dikembangkan.
+- `main.py` adalah pintu masuk untuk menjalankan aplikasi dan menyiapkan konfigurasi awal.
+- `routes` menerima request/data dari luar dan meneruskannya ke `services`.
+- `services` adalah otak utama aplikasi yang memproses aturan, validasi, dan alur kerja.
+- `repositories` bertanggung jawab pada penyimpanan dan pengambilan data dari Google Sheets, database, Excel, atau file lain.
+- `models` menjaga bentuk/struktur data agar rapi.
+- `utils` berisi fungsi bantuan kecil seperti format tanggal, format angka, atau parsing teks.
+
+Contoh/praktik:
+- Menganalisis struktur backend Telegram Bot laporan kerja.
+- Membuat diagram inti: `routes -> services -> repositories`.
+- Menambahkan bantuan: `services -> models` dan `services -> utils`.
+
+Hal yang mulai dipahami:
+- Kode perlu dipisah berdasarkan tugas agar tidak berantakan.
+- `routes` bukan tempat logika utama; `routes` hanya menerima dan meneruskan request.
+- `services` mengatur proses utama dan boleh memakai bantuan dari `models` dan `utils`.
+- `repositories` adalah bagian yang menyimpan data ke Google Sheets/database.
+
+Hal yang masih bingung:
+- Belum ada catatan khusus. Nanti akan diperdalam saat melihat contoh kode sederhana.
+
+Next step:
+- Pelajari contoh kode sederhana berdasarkan struktur folder.
+- Materi berikutnya: `01-fundamental/07-contoh-kode-struktur-folder.md`.
