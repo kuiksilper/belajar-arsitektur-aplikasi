@@ -116,3 +116,39 @@ Hal yang masih bingung:
 Next step:
 - Pelajari API dan JSON sebagai bentuk request-response yang lebih resmi dan terstruktur.
 - Materi berikutnya: `01-fundamental/05-api-json.md`.
+
+---
+
+## Tanggal: 2026-07-06 — Sesi 4
+
+Topik:
+API dan JSON pada Telegram Bot dan Google Sheets.
+
+Yang dipelajari:
+- API adalah jalur komunikasi antar aplikasi.
+- API berbeda dengan database.
+- Database adalah tempat menyimpan data, sedangkan API adalah jalur komunikasi untuk mengakses atau mengubah data melalui sistem lain.
+- Endpoint adalah alamat tertentu di dalam API, misalnya `/login`, `/reports`, atau `/materials`.
+- API key bukan endpoint; API key adalah kunci akses.
+- JSON adalah format data yang mudah dibaca manusia dan mudah diproses mesin.
+- Dalam JSON, key adalah nama field dan value adalah isi datanya.
+- Telegram API menghubungkan script bot dengan Telegram.
+- Google Sheets API menghubungkan backend dengan Google Sheets.
+
+Contoh/praktik:
+- Membuat contoh JSON sederhana untuk laporan kerja harian.
+- Membuat diagram alur Telegram Bot yang menyimpan laporan ke Google Sheets.
+- Merapikan diagram: `User -> Frontend Telegram -> Telegram API -> Backend -> Google Sheets API -> Google Sheets -> Backend -> Telegram API -> Frontend Telegram -> User`.
+
+Hal yang mulai dipahami:
+- API bukan tempat penyimpanan data.
+- API adalah jalan resmi agar aplikasi dapat berkomunikasi dengan aplikasi lain.
+- JSON dipakai agar data yang dikirim lewat API punya struktur yang jelas.
+- Telegram Bot dan Google Sheets tidak diakses sembarangan, tetapi melalui API masing-masing.
+
+Hal yang masih bingung:
+- Belum ada catatan khusus. Nanti akan diperdalam saat mulai membahas struktur project dan pemisahan bagian kode.
+
+Next step:
+- Pelajari struktur folder project dan pemisahan tanggung jawab kode.
+- Materi berikutnya: `01-fundamental/06-struktur-folder-project.md`.
