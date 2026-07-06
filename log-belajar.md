@@ -186,3 +186,37 @@ Hal yang masih bingung:
 Next step:
 - Pelajari contoh kode sederhana berdasarkan struktur folder.
 - Materi berikutnya: `01-fundamental/07-contoh-kode-struktur-folder.md`.
+
+---
+
+## Tanggal: 2026-07-06 — Sesi 6
+
+Topik:
+Dari struktur folder ke contoh kode sederhana.
+
+Yang dipelajari:
+- `main.py` hanya menjalankan aplikasi, meneruskan input ke `routes`, dan menampilkan hasil.
+- `main.py` tidak langsung memproses laporan agar aplikasi tetap rapi, mudah dikembangkan, mudah di-maintenance, dan scalable.
+- `routes` menerima laporan/pesan dari Telegram lalu meneruskan ke `services`.
+- `services` memproses data dari `routes` dan mengatur alur utama aplikasi.
+- `utils/text_parser.py` membantu mengambil bagian tertentu dari teks agar bisa diproses.
+- `models/report_model.py` menentukan struktur data akhir yang diinginkan.
+- `repositories/sheets_repository.py` menyimpan data yang sudah diproses.
+
+Contoh/praktik:
+- Membaca alur kode dari `main.py` sampai `repositories.save_report()`.
+- Membuat diagram: `main.py -> routes -> services -> utils -> models -> repositories`.
+- Menganalisis bagian mana yang berubah jika penyimpanan, format pesan, atau struktur data berubah.
+
+Hal yang mulai dipahami:
+- Struktur folder bisa diterjemahkan menjadi alur kode nyata.
+- Jika penyimpanan berubah, bagian yang paling banyak berubah adalah `repositories`.
+- Jika format pesan Telegram berubah, bagian yang paling mungkin berubah adalah `utils/text_parser.py`.
+- Jika struktur data akhir berubah, bagian `models` ikut berubah.
+
+Hal yang masih bingung:
+- Belum ada catatan khusus. Nanti akan diperdalam saat praktik membuat dan menjalankan contoh kode.
+
+Next step:
+- Praktik membuat struktur folder dan menjalankan contoh kode Python sederhana.
+- Materi berikutnya: `01-fundamental/08-praktik-mini-struktur-folder.md`.
