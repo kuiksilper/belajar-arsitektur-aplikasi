@@ -110,7 +110,7 @@ JSON = format penulisan data yang mudah dibaca manusia dan mudah diproses mesin
 Contoh data biasa:
 
 ```text
-Nama: Andrie
+Nama: Andre
 Pekerjaan: Tarik kabel
 Lokasi: Sanur
 ```
@@ -119,7 +119,7 @@ Dalam JSON:
 
 ```json
 {
-  "nama": "Andrie",
+  "nama": "Andre",
   "pekerjaan": "Tarik kabel",
   "lokasi": "Sanur"
 }
@@ -133,7 +133,7 @@ Dalam JSON, data ditulis sebagai pasangan key dan value.
 
 ```json
 {
-  "nama": "Andrie"
+  "nama": "Andre"
 }
 ```
 
@@ -141,7 +141,7 @@ Penjelasan:
 
 ```text
 "nama"   = key
-"Andrie" = value
+"Andre" = value
 ```
 
 Key adalah nama field.
@@ -175,14 +175,14 @@ Penulisan JSON harus rapi. Contoh yang benar:
 
 ```json
 {
-  "nama": "Andrie"
+  "nama": "Andre"
 }
 ```
 
 Bukan:
 
 ```text
-{ "Nama :" "Andrie" }
+{ "Nama :" "Andre" }
 ```
 
 Karena dalam JSON, setelah key harus ada tanda titik dua `:` di luar tanda kutip key.
@@ -244,7 +244,7 @@ Contoh bentuk data mirip JSON:
     },
     "from": {
       "id": 12345,
-      "first_name": "Andrie"
+      "first_name": "Andre"
     },
     "text": "Tarik kabel 100 meter lokasi Sanur"
   }
@@ -272,7 +272,7 @@ Jika backend ingin menambahkan laporan kerja ke Google Sheets, backend mengirim 
   "values": [
     [
       "2026-07-06",
-      "Andrie",
+      "Andre",
       "Tarik kabel",
       "100 meter",
       "Sanur"
@@ -291,7 +291,7 @@ Contoh JSON sederhana untuk laporan kerja harian:
 
 ```json
 {
-  "nama": "Andrie",
+  "nama": "Andre",
   "tanggal": "2026-07-06",
   "pekerjaan": "Tarik kabel",
   "volume": 100,
@@ -369,11 +369,11 @@ Contoh:
 
 ```json
 {
-  "nama": "Andrie"
+  "nama": "Andre"
 }
 ```
 
-`nama` adalah key, sedangkan `Andrie` adalah value.
+`nama` adalah key, sedangkan `Andre` adalah value.
 
 ## 6. Kenapa JSON
 
@@ -391,12 +391,37 @@ Google Sheets API merupakan jalur komunikasi yang memungkinkan backend mengakses
 
 ```json
 {
-  "nama": "Andrie",
+  "nama": "Andre",
   "tanggal": "2026-07-06",
   "pekerjaan": "Tarik kabel",
   "volume": 100,
   "satuan": "meter",
   "lokasi": "Sanur"
+}
+```
+
+Catatan tambahan untuk contoh daftar personel:
+
+```json
+{
+  "personel": ["Andre", "Helman", "Bernad", "Darto"]
+}
+```
+
+Jika setiap personel punya detail sendiri, bentuknya bisa seperti ini:
+
+```json
+{
+  "personel": [
+    {
+      "nama": "Andre",
+      "role": "leader"
+    },
+    {
+      "nama": "Helman",
+      "role": "anggota"
+    }
+  ]
 }
 ```
 
@@ -413,7 +438,7 @@ User -> Frontend Telegram -> Telegram API -> Backend -> Google Sheets API -> Goo
 Jawaban sudah benar secara konsep. Ada beberapa koreksi kecil:
 
 1. Endpoint bukan API key. Endpoint adalah alamat seperti `/login`, `/reports`, atau `/materials`. API key adalah kunci akses.
-2. JSON perlu format yang benar. Contoh yang benar adalah `{ "nama": "Andrie" }`.
+2. JSON perlu format yang benar. Contoh yang benar adalah `{ "nama": "Andre" }`.
 3. Google Sheets API bukan database. Google Sheets API adalah jalur komunikasi, sedangkan Google Sheets adalah tempat data tersimpan.
 4. Diagram yang dibuat sudah benar. Hanya perlu dirapikan penulisannya agar lebih mudah dibaca.
 
